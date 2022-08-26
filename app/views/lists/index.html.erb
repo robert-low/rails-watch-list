@@ -1,5 +1,12 @@
 <h1>Watch Lists</h1>
 
+<%= cl_image_tag("ouua9b2f4l1iuvmkdjvd",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("mp0jgusf9xeu963mkad1",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
+
 <%= link_to "+", new_list_path %>
 
 <% @lists.each do |list| %>
