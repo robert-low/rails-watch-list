@@ -1,0 +1,11 @@
+<h1>Watch Lists</h1>
+
+<%= link_to "+", new_list_path %>
+
+<% @lists.each do |list| %>
+    <%= link_to list_path(list) do %>
+        <div class="card">
+            <%= list.name %>
+        </div>
+    <% end %>
+<% end %>
